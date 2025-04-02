@@ -1,0 +1,26 @@
+help me create a python exe that uses a modernt html ui. 
+In the ui i want to select a mark down source file with its content looking like this:
+
+"Alle da außer x,y,z
+Gäste: b
+Fehlt: a
+
+X öffnet die Sitzung .....
+
+Abstimmung: 500
+# neuer top
+....
+# sonstiges"
+
+the contents of the md dont need to be displayed on the UI.
+
+after that it should call function that splits for every new top ( marked as #)
+starting before the first "#" is the header of the file
+
+now  it should send each section starting with the header to a AI. 
+The should transribe (improving readability, grammar and marking spots for possible explainations) 
+the section finding a good header, subheaders if needed. The Ai should assume tex format saving each 
+section for it self. after that python will combine the sections into one tex.
+
+
+https://github.com/phfaist/pylatexenc/tree/main

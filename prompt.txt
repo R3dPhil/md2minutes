@@ -1,0 +1,19 @@
+Convert Markdown to LaTeX with minutes package.
+
+Examples
+Markdown:
+# (TOP) Formalia
+15:05, Niklas eröffnet die Sitzung. Wir sind vollzählig anwesend. Pia ist als Gast da.
+Abstimmung Thema X 600
+
+to LaTeX:
+\topic{Formalia}
+\subtopic{Eröffnung der Sitzung}
+Niklas eröffnet die Sitzung um 15:05 Uhr.
+\subtopic{Feststellung der Beschlussfähigkeit}
+Es sind 6 entsandte Personen anwesend. Somit sind wir beschlussfähig. Pia ist als Gast da.
+
+Markdown:
+task Philipp möchte sich mit Hannah treffen zu Thema X
+LaTeX:
+\task{Philipp}[bis zur nächste Sitzung]{Treff mit Hannah zu dem Thema X}
